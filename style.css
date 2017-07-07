@@ -1,224 +1,79 @@
 @font-face {
-    font-family: futuraLight;
+    font-family: futuraPro;
     src: url(fonts/FuturaPRO-Medium.otf);
 }
 
 @font-face {
-    font-family: futuraMedium;
-    src: url(fonts/Futura-Medium.ttf);
+    font-family: proximaNovaBold;
+    src: url(fonts/proximanovaBold.ttf);
 }
 
-@font-face {
-    font-family: lucidaConsole;
-    src: url(fonts/LucidaConsole.ttf);
+html {
+    background: url(gifs/gosOne.gif), url(gifs/narutoOne.gif) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Styling Name */    
+#title {
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    font-size: 45px;
+    font-style: normal;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    line-height: 1.3em;
+}
+
+#navigation {
+    font-family: proximaNovaBold, Futura, futuraPro, sans-serif;
+    color: white;
+    letter-spacing: .2em;
+    font-size: 13px;
+}
+
+/* Styling the unordered list */
+ul {
+    list-style-type: none;
+    margin: none;
+    padding: none;
+}
+
+ul li {
+    display: inline;
+    margin-left: 15.5px;
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    opacity: 0.6;
+}
+    
+/* Positioning */
+#title, #navigation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #title {
-    font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-    text-transform: uppercase;
+    bottom: 31.1%;
 }
 
-#description {
-    font-family: futuraMedium, futuraLight, Futura, "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
-    font-size: 18px;   
-    color: #363636;
-}
-
-/* Navigation CSS formatting */
 #navigation {
-    font-family: lucidaConsole, Monaco, Menlo, monospace;
-    font-size: 16px;
-}
-
-#navigation ul {
-   margin: 0;
-   padding: 0;
-   list-style-type: none;
-}
-
-#navigation li {
-    display: inline;
-    float: right;
-}
-
-#navigation a {
-    text-decoration: none;
-    color: black;
-    padding: 5px;
-    margin: 15px; 
-}
-
-#navigation a:hover {
-    background-color: #FCE234;
-    padding: 5px;
-}
-
-#navigation a.current {
-    background-color: #FCE234;
-    padding: 5px;
-}
-
-/** Formatting for Photo Grid **/
-body {
-    margin: 40px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 245px 245px 245px; 
-    grid-template-rows: 245px 245px 245px;
-    grid-gap: 20px;
-    background-color:#fff;
-    color: #444;
-}
-
-.box {
-    background-color: aliceblue;
-    color: gray;
-    padding: 20px;
-    font-size: 250%;
-    font-family: Futura;
-}
-
-/** Formatting for individual photo **/
-.photo {
-    width: 90%;
-    margin: auto;
-}
-
-.caption {
-    font-family: Futura, futuraMedium, futuraLight, "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
-    font-size: 18px;
-    text-transform: lowercase;
-    text-align: center;
-    margin-top: 34px;
-}
-
-/** Formatting for Media Object **/
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-#body {
-  margin: 40px;
-  font-family: futuraMedium, futuraLight, Futura;
-  background-color: #fff;
-  color: #444;
-}
-
-img {
-  max-width: 100%;
-}
-
-p {
-  margin: 0 0 1em 0;
-}
-
-.media {
-  margin-bottom: 2em;
-  padding: 10px;
-}
-
-.media > .projectname { grid-area: title; }
-.media > .img { grid-area: img; }
-.media > .content { grid-area: bd; }
-
-.media {
-  display: grid;
-  grid-column-gap: 20px;
-  grid-template-areas:
-    "title"
-    "bd"
-    "img";
-}
-
-
-@media (min-width: 600px) {
-
-  /* clearfix*/
-  .media .img {
-    float: left;
-    margin: 0 10px 0 0;
-    width: 150px;
-  }
-  
-  .media .footer {
-    background-color: #eee;
-    padding: 10px;
-  }
-
-  .media.media-flip .img {
-    float: right;
-    margin: 0 0 0 10px;
-  }
-
-  .media > * {
-    margin: 0 0 0 160px;
-  }
-
-  .media.media-flip > * {
-    margin: 0 160px 0 0;
-  }
-
-  @supports(display: grid ) {
-    /* override */
-    .media > *,
-    .media.media-flip > * {
-      margin: 0;
-    }
-
-    .media .img,
-    .media.media-flip .img {
-      width: auto;
-      margin: 0;
-    }
-      
-    .media {
-      display: grid;
-      grid-column-gap: 20px;
-      grid-template-columns: 150px 3fr;
-      grid-template-rows: auto 1fr auto;
-      grid-template-areas:
-        "img title"
-        "img bd";
-      }
-
-    .media.media-flip {
-      grid-template-columns: 3fr 150px ;
-      grid-template-areas:
-        "title img"
-        "bd img";
-    }
-  }
-}
-
-hr {
-    display: inline;
-    width: 85px;
-    position: absolute;
-    margin-top: 27px;
-}
-
-.type {
-    font-size: 11px;
-    font-family: Futura, futuraMedium, futuraLight;
-    font-weight: bold;
-    padding-top: 50px;
-}
-
-.year {
-    font-size: 10px;
-}
-
-#body a {
-    text-decoration: none;
-    color: black;
-}
-
-#body a:visited {
-    color: black;
+    right: 23.5%;
+    top: 53%;
 }
