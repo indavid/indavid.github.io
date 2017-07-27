@@ -33,6 +33,7 @@
 ul a {
     text-decoration: none;
     opacity: 1;
+    color: black;
 }
 
 ul a:link {
