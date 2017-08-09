@@ -8,6 +8,11 @@
     src: url(fonts/proximanovaBold.ttf);
 }
 
+@font-face {
+    font-family: proximaNova;
+    src: url(fonts/proximanova.ttf);
+}
+
 /* Styling Name Title */    
 #title {
     font-family: "Times New Roman", Times, serif;
@@ -60,12 +65,12 @@ ul a:hover {
     justify-content: center;
     align-items: center;
     margin-top: 63px;
-    margin-right: 13.6px;
+    position: relative;
+    z-index: 3;
 }
 
 #navigation {
     text-align: center;
-    margin-right: 20px;
     position: relative;
     z-index: 3;
 }
@@ -203,4 +208,55 @@ li {
     color: white;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
+}
+
+/* Styling the work page */
+.box h2 { 
+    font-family: proximaNovaBold, Futura, futuraPro, helvetica, sans-serif;
+    letter-spacing: .2em;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #1d1d1d;
+    text-align: center;
+    margin-top: 6%;
+}
+
+.workvisual {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 10%;
+}
+
+#works a {
+    text-decoration: none;
+}
+
+#works a:link {
+    text-decoration: none;
+}
+
+#works a:visited {
+    text-decoration: none;
+}
+
+/** Styling the work experience pages **/
+h1 {
+    font-family: proximaNovaBold, Futura, futuraPro, helvetica, sans-serif;
+    letter-spacing: .2em;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #1d1d1d;
+    text-align: center;
+    margin-top: 6%;
+}
+
+p {
+    font-family: proximaNovaBold, Futura, futuraPro, helvetica, sans-serif;
+    letter-spacing: .2em;
+    font-size: 11px;
+    color: #1d1d1d;
+    text-align: center;
+    margin-top: 6%;
 }
