@@ -119,6 +119,8 @@ li {
     font-size: 14px;
     line-height: 2em;
     letter-spacing: 0.02em;
+    text-align: left;
+    margin-top: 15.5px;
 }
 
 .text a {
