@@ -9,7 +9,7 @@
 }
 
 html {
-    background: url(gifs/gosOne.gif), url(gifs/narutoOne.gif) no-repeat center center fixed;
+    background: url(gifs/akiraTwo.gif), url(gifs/narutoOne.gif) no-repeat center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -59,7 +59,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5.95em;
+    margin-top: 8em;
 }
 
 #navigation {
