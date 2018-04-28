@@ -1,0 +1,41 @@
+/* =================== Overrides and Additions for index.html =================== */  
+nav li a {color: #fff;}
+nav li a:hover {color: #000;}
+
+h2, h3, h4 {font-family: 'Lora', Georgia, serif; color: #fff;}
+h2 {
+	font-size: 4em;
+	text-transform: lowercase;
+	margin-bottom: 20px;
+}
+h3, h4 {
+	color: #000;
+	font-weight: 400;
+	font-size: 4em;
+	letter-spacing: 0.04em;
+	text-transform: lowercase;
+	display: table;
+	padding: 0 14px;
+}
+h3 {background-color: rgba(0, 0, 162, 0.9)}
+h4 {background-color: rgba(245, 236, 9, 0.9)}
+
+.header-top nav li a {color: #fff;}
+
+section:nth-of-type(1) {background: #e4f1ee url('../img/ldg-3.jpg') no-repeat center / cover;}
+/* section:nth-of-type(2) {background: #e4f1ee url('../img/smoke2.jpg') no-repeat center / cover;} */
+section:nth-of-type(2) {background-color: #e4f1ee}
+section:nth-of-type(2) slide:nth-of-type(1) {background: #e4f1ee url('../img/20170805-DSC_0222.jpg') no-repeat center / cover;}
+section:nth-of-type(2) slide:nth-of-type(2) {background: #e4f1ee url('../dig/faf_sketch3.jpg') no-repeat center / cover;}
+section:nth-of-type(2) slide:nth-of-type(3) {background: #e4f1ee url('../dig/20161219-DSC_0434-2.jpg') no-repeat center / cover;}
+section:nth-of-type(2) slide:nth-of-type(4) {background: #e4f1ee url('../dig/rotns_mockup-1.jpg') no-repeat center / cover;}
+section:nth-of-type(2) slide:nth-of-type(5) {background: #e4f1ee url('../trad/oil_cmyk.jpg') no-repeat center / cover;}
+/* section:nth-of-type(3) {background: #e4f1ee url('../photo/d_eyes.jpg') no-repeat center / cover;} */
+section:nth-of-type(3) slide:nth-of-type(1) {background: #e4f1ee url('../photo/d_eyes2.jpg') no-repeat center / cover;}
+section:nth-of-type(3) slide:nth-of-type(2) {background: #e4f1ee url('../photo/ppov-1.JPG') no-repeat center / cover;}
+section:nth-of-type(3) slide:nth-of-type(3) {background: #e4f1ee url('../photo/nc-1.jpg') no-repeat center / cover;}
+section:nth-of-type(4) {background: #e4f1ee url('../img/ldg-2.jpg') no-repeat center / cover;}
+
+@media screen and (max-width: 767px) {
+	h3 {font-size: 3em;}
+}
