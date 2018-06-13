@@ -1,16 +1,16 @@
 @font-face {  
     font-family: 'proximaNovaBold';  
-    src: url('<%= asset_path("proximanova-bold.ttf") %>') format('truetype');   
+    src: url("../assets/fonts/proximanova-bold.ttf") format('truetype');   
 }
 
 @font-face {  
     font-family: 'proximaNovaSemibold';  
-    src: url('<%= asset_path("proximanova-semibold.ttf") %>') format('truetype');   
+    src: url("../assets/fonts/proximanova-semibold.ttf") format('truetype');   
 }
 
 @font-face {  
     font-family: 'proximaNovaRegular';  
-    src: url('<%= asset_path("proximanova-regular.ttf") %>') format('truetype');   
+    src: url("../assets/fonts/proximanova-regular.ttf") format('truetype');   
 }
 
 /*
@@ -46,16 +46,17 @@ body {
     background-color: #fbfbfb;
 }
 
-a {color: #fff, text-decoration: none; cursor: pointer;}
+a {color: #fff; text-decoration: none; cursor: pointer;}
 
 ul, li {list-style-type: none;}
 
 ::selection {color: #000; background: #f5ec09;} 
 ::-moz-selection {color: #000, background #0000a2;}
 
-img.icon-full {width: 26%; height: auto;}
+img.icon-full {width: 60%; height: auto;}
 
 /* =================== NAVIGATION =================== */  
+
 .header-top {
     width: 100vh;
     height: 45px;
@@ -70,15 +71,18 @@ img.icon-full {width: 26%; height: auto;}
     font-size: 1em;
     letter-spacing: .18em;
     line-height: 45px;
-    width: 100vh;
+    width: 95vh;
     position: fixed;
     -webkit-transition: all 1.5s;
             transition: all 1.5s;
 }
 
+.header-top nav ul {margin: 0 auto; height: 100%;}
+.header-top nav li {list-style: none; margin-right: 20px; float: right; height: 100%; line-height: 45px;}
+
 .header-top nav li a {
-    font: ProximaNovaBold;
-    font-size: 1.2em;
+    font: "proximaNovaBold";
+    font-size: 0.95em;
     font-weight: 700;
     color: #9da8aa;
     display: block;
@@ -91,10 +95,12 @@ img.icon-full {width: 26%; height: auto;}
             transition: border-bottom .3s;
 }
 
-.header-top nav li.lihome.active a, .header-top nav li.liproj a:hover {color: #5F4B8B}
-.header-top nav li.liwork.active a, .header-top nav li.liproj a:hover {color: #5F4B8B}
-.header-top nav li.lijournal.active a, .header-top nav li.liproj a:hover {color: #5F4B8B}
-.header-top nav li.liabout.active a, .header-top nav li.liproj a:hover {color: #5F4B8B}
+.header-top nav li.lihome {font-size: 3em;}
+
+.header-top nav li.lihome.active a, .header-top nav li.lihome a:hover {color: #5F4B8B}
+.header-top nav li.liwork.active a, .header-top nav li.liwork a:hover {color: #5F4B8B}
+.header-top nav li.lijournal.active a, .header-top nav li.lijournal a:hover {color: #5F4B8B}
+.header-top nav li.liabout.active a, .header-top nav li.liabout a:hover {color: #5F4B8B}
 
 body.fp-viewing-fifthSection-1 #menu li:last-child a {color: #ff950d;}
 
@@ -102,7 +108,7 @@ body.fp-viewing-fifthSection-1 #menu li:last-child a {color: #ff950d;}
 
 /* =================== MOBILE NAVIGATION =================== */  
 .mobilenav {
-    with: 90vw;
+    width: 90vw;
     height: 45px;
     position: absolute;
     top: 0;
@@ -148,8 +154,8 @@ body.fp-viewing-fifthSection-1 #menu li:last-child a {color: #ff950d;}
 
 section {text-align: center;}
 
-.splitblock {font-size: 1em; color: #000; width: 75%; margin: 0 auto; text-align: center;}
-.lefty {text-align: left; display: block; float: left; margin-left: 0;}
+.splitblock {font-size: 1em; color: #fff;  width: 75%; margin: 0px auto; text-align: center;}
+.lefty {text-align: left; display: block; float: left;}
 .righty {text-align: right; display: block; float: right; margin-right: 0;}
 
 h1 {
@@ -166,26 +172,38 @@ h3, h4 {
     font-size: :1em;
     line-height: 1.4em;
     font-weight: 200;
-    color: #000;
+    color: #fff;
     text-transform: none;
     letter-spacing: 0.04em;
     text-align: center;
     margin: 10px auto 16px auto;
 }
 
-h1, h2 {width: 60%;}
-.post {width: 80%; margin: 0 auto 5% auto; text-align: center;}
-.post p {font-size: .9em; text-align: left; margin: 0 auto 10px auto; width: 60%;}
-.splitblock a, .post p a {color: #000; border-bottom: 1px solid #000;}
-.splitblock a:hover {color: #ff0000; border-bottom: 1px solid #ff0000;}
-.post p a:hover {color: #ff950d; border-bottom: 1px solid #ff950d;}
 
-.ig, .pitem.p30 {width: 30%; margin: 0 2% 2% 0; display: inline-block;}
-.pitem.p50 {width: 48.5%; margin: 0 0 2% 0; display: inline-block;}
-.pitem.p50.left {margin-right: 2%;}
-.pitem.p100 {width: 100%; margin: 0 auto 2% auto;}
-.pitem.p100.alone {margin-top: 2%;}
-.pitem img, .pitem.p30 img, .pitem.p50 img, .pitem.p100 img {max-width: 100%; display: inline-block;}
+
+.sm-icons {
+    float: right;
+    margin-top: 500px;
+    margin-left: 79%;
+    margin-right: 10px;
+    
+}
+
+.sm-icons ul.nav {
+    text-align: center;
+}
+
+.sm-icons ul.nav li {
+    display: inline-block;
+}
+
+.socialmedia {
+    width: 13%;
+    height: auto;
+    padding-left: 10px;
+}
+
+
 
 /* =================== SLIDENAV STYLES - fullPage.js =================== */  
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
@@ -242,7 +260,7 @@ h1, h2 {width: 60%;}
 @media screen and (max-width: 767px) {
 	html {font-size 62.5%;}
 	.splitblock {font-size: .6em; line-height: 1.2em; width: 80%; margin-left: 0 auto; text-align: left;}
-	.lefty, .righty {text-align: center; float: none; margin: 0 auto;}
+	.lefty, .righty {text-align: center; float: none; margin: 0 auto; }
 	.emoji2 {max-width: 10px;}
 	h1, h2, .post p {width: 95%;}
 
@@ -273,6 +291,12 @@ h1, h2 {width: 60%;}
 		padding: 3px;
 	}
 }
+
+.lefty {
+    margin-bottom: 200px;
+}
+
+
 
 
 

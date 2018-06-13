@@ -14,7 +14,7 @@ $(document).ready(function(){
     slidesNavigation: true,
     css3: true,
     controlArrows: false,
-    anchors: ['home', 'projects', 'observations', 'about', 'fifthSection'],
+    anchors: ['home', 'work', 'journal', 'about', 'fifthSection'],
     menu: '#menu',
 
     afterLoad: function(anchorLink, index) {
