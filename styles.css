@@ -329,7 +329,7 @@ p:first-child {
   #about .alternate img {
     grid-column: 5/11;
   }
-  .text {
+  #about .text {
     grid-column: 5/11;
     grid-row: 1/2;
     order: 2;
