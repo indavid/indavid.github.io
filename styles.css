@@ -129,7 +129,7 @@ nav .fa-code {
   background-color: var(--darkmag);
 }
 
-@media (min-width: 830px) {
+@media (min-width: 850px) {
   nav {
     max-width: 1600px;
     margin: 0 auto;
@@ -171,7 +171,7 @@ p:first-child {
   font-weight: normal;
 }
 
-/** Projects styles **/
+/** Projects styles for mobile first**/
 #projects {
   padding: 4rem;
   margin: 0 auto;
@@ -231,14 +231,15 @@ p:first-child {
   padding: 1rem;
 }
 
-@media (min-width: 550px) {
+/** Styles for desktop display **/
+@media (min-width: 1010px) {
   article {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 1rem;
   }
   #projects img {
-    grid-column: 1/6;
+    grid-column: 1/6; /** 1 to 6 **/
     grid-row: 1/2;
   }
   #projects .alternate img {
@@ -322,7 +323,7 @@ p:first-child {
   padding: 1rem;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 1010px) {
   article {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
