@@ -31,7 +31,9 @@ body {
   font-size: var(--font-size);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
 }
 
@@ -54,7 +56,11 @@ a:hover {
 }
 
 .gradient {
-  background: linear-gradient(90deg, rgba(227,16,203,1) 0%, rgba(134,251,251,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(227, 16, 203, 1) 0%,
+    rgba(134, 251, 251, 1) 100%
+  );
   height: 2px;
 }
 
@@ -128,7 +134,7 @@ nav .fa-code {
     max-width: 1600px;
     margin: 0 auto;
   }
-  
+
   nav li:first-child {
     flex-basis: auto;
     text-align: left;
@@ -233,7 +239,7 @@ p:first-child {
   }
   #projects img {
     grid-column: 1/6;
-    grid-row: 1/2
+    grid-row: 1/2;
   }
   #projects .alternate img {
     grid-column: 5/11;
@@ -324,7 +330,7 @@ p:first-child {
   }
   #about img {
     grid-column: 1/6;
-    grid-row: 1/2
+    grid-row: 1/2;
   }
   #about .alternate img {
     grid-column: 5/11;
@@ -393,17 +399,17 @@ footer ul {
   margin: 1rem 0;
 }
 
-footer ul [class*='fa-'] {
+footer ul [class*="fa-"] {
   font-size: 150%;
   color: var(--magenta);
   list-style: none;
-} 
+}
 
 footer a {
   text-decoration: none;
 }
 
-footer ul [class*='fa-']:hover {
+footer ul [class*="fa-"]:hover {
   color: var(--hotmag);
 }
 
