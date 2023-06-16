@@ -179,7 +179,7 @@ p:first-child {
 }
 
 #projects article {
-  margin-bottom: 2rem;
+  margin-bottom: 0.2rem;
 }
 
 #projects h2 {
@@ -379,7 +379,7 @@ p:first-child {
 /** footer styles **/
 footer {
   padding: 2rem 0;
-  width: 400px;
+  width: 450px;
   margin: 0 auto;
 }
 
